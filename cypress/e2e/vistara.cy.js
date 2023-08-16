@@ -1,11 +1,10 @@
 /// <reference types = "cypress"/>
 
-it('Lufthansa', () => {
+it('Vistara', () => {
 
     cy.clearAllCookies()
     cy.visit('https://www.airvistara.com/in/en')
-    cy.wait(1000)
-    cy.get('#acceptAllBtn').click()
     
+    cy.get('#departsfrom-div > .scombobox-display').should('be.visible').scrollIntoView().click()
     
 })
