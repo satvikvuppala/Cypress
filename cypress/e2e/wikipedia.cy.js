@@ -11,5 +11,5 @@ it('Wikipedia',()=>{
     cy.get(':nth-child(135) > a').click()
     cy.wait(5000)
 
-    
+
 })
